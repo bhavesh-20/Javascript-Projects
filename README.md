@@ -1,2 +1,2 @@
-# React-Projects
-Repository for different React projects.
+# Javascript-Projects
+Repository for different Javascript projects.
