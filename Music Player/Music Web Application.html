@@ -69,3 +69,14 @@ let isPlaying = false;
     play.classList.replace('fa-play', "fa-pause");
     img.classList.add("anime");
 };
+
+
+// for pause functions 
+
+// play.addEventListener('click', () => {
+    const pauseMusic = () => {
+    isPlaying = false;
+    music.pause();
+    play.classList.replace("fa-pause", "fa-play");
+    img.classList.remove("anime");
+};
