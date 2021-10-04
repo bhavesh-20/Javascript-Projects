@@ -103,3 +103,17 @@ music.src="Music/" +songs.name + ".mp3";
 img.src = "img1"+songs.name + ".jpg";
 
 };
+songIndex = 0;
+
+const nextSong = () => {
+        songIndex =(songIndex + 1) % songs.length; 
+    loadSong(songs[songIndex]);
+
+};
+// next.addEventListener("click", nextSong);
+// prev.addEventListener("click", prevSong);
+
+
+</script>
+</body>
+</html>
