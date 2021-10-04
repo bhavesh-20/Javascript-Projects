@@ -58,3 +58,14 @@ const songs = [{
 },
 ];
     
+let isPlaying = false;
+
+// for play functions 
+
+// play.addEventListener('click', () => {
+    const playMusic = () =>{
+    isPlaying = true;
+    music.play();
+    play.classList.replace('fa-play', "fa-pause");
+    img.classList.add("anime");
+};
