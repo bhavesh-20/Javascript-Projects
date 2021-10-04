@@ -80,3 +80,26 @@ let isPlaying = false;
     play.classList.replace("fa-pause", "fa-play");
     img.classList.remove("anime");
 };
+play.addEventListener('click', ()=> {
+
+if(isPlaying){
+    pauseMusic();
+}
+else {
+    playMusic();
+
+}
+
+// isPlaying ? pauseMusic() : pauseMusic();
+});
+
+
+//  chnaging the music data 
+
+const loadSong = (songs) =>{
+title.textContent = songs.title;
+artist.textContent = songs.artist;
+music.src="Music/" +songs.name + ".mp3";
+img.src = "img1"+songs.name + ".jpg";
+
+};
